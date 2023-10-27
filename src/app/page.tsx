@@ -1,14 +1,19 @@
 "use client"
-import Image from 'next/image'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
-  const [input, setInput] = useState("")
+  const router = useRouter();
+  const [name, setName] = useState('')
+
   const handleChange=(e:any)=>{
-    setInput(e.target.value)
+    setName(e.target.value)
+    console.log(e.target.value)
   }
   const handleSubmit=(e:any)=>{
-    e.preventDefault()
+    e.preventDefault();
+    router.push(`/prediction/${name}`)
+
   }
   return (
    <div className='items-center'>
@@ -20,7 +25,7 @@ export default function Home() {
 
           <input type="text" 
                   onChange={(e)=>handleChange(e)} 
-                 value={input} 
+                 value={name} 
                  placeholder='enter your name here ' 
                  className='p-3 bg-slate-300 rounded-lg text-gray-700'  />
 
