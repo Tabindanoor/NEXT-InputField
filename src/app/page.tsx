@@ -9,6 +9,7 @@ const page = () => {
     <p>why net is very slow i wanna shot it </p>
     <p>why net is very slow i wanna shot it </p>
     <p>why net is very slow i wanna shot it </p>
+    <p>why net is very slow i wanna shot it </p>
     </div>
   )
 }
