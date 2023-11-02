@@ -1,15 +1,35 @@
+import New from '@/components/New'
 import React from 'react'
-
+import { Route } from 'next'
+import Router from 'next/router'
+import Link from 'next/link'
 const page = () => {
+  let todo =[{title:"x"},{title:"s"},{title:"z"}]
   return (
     <div>
-      this is me tabinda nooor
+      <p>Here appear all the todos </p>
 
-    <h1>this is also me tabinda noor</h1>
-    <p>why net is very slow i wanna shot it </p>
-    <p>why net is very slow i wanna shot it </p>
-    <p>why net is very slow i wanna shot it </p>
-    <p>why net is very slow i wanna shot it </p>
+      <Link to={"/"} >Create New Todo</Link>
+
+      <div className=''>        
+{
+  todo.map((data,id)=>{
+    return(
+      <div key={id} className='flex'>
+        
+        <input 
+        type="checkbox" 
+        name="" 
+        id="" 
+        className='peer-disabled:'
+         />
+        <p>{data.title} </p>
+      </div>
+    )
+  })
+}
+        {/* <p>Here is the todo</p> */}
+      </div>
     </div>
   )
 }
