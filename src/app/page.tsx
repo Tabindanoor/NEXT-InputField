@@ -9,7 +9,7 @@ const page = () => {
     <div>
       <p>Here appear all the todos </p>
 
-      <Link to={"/"} >Create New Todo</Link>
+      <Link href={"/"} >Create New Todo</Link>
 
       <div className=''>        
 {
