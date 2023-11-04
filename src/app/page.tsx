@@ -8,6 +8,7 @@ const page = () => {
   return (
     <div>
       <p>Here appear all the todos </p>
+      <p>Todo list using prisma </p>
 
       <Link href={"/"} >Create New Todo</Link>
 
