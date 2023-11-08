@@ -22,9 +22,9 @@ const page = () => {
         type="checkbox" 
         name="" 
         id="" 
-        className='peer-disabled:'
+        className='peer cursor-pointer'
          />
-        <p>{data.title} </p>
+        <p className=' cursor-pointer peer-checked:line-through peer-checked:text-slate-300'>{data.title} </p>
       </div>
     )
   })
