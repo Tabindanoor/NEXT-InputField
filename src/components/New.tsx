@@ -8,6 +8,7 @@ const New = () => {
         <p>ADD NEW TODOS HERE</p>
         <input type="text" 
               className='bg-slate-500'/>
+              <p>data</p>
     </div>
   )
 } 
