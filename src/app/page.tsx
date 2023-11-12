@@ -16,19 +16,7 @@ export default async function  Home() {
     <p className='text-2xl'>All todos</p>
     <Link  href="/new" className='p-2  border-slate-400 border rounded-2xl text-xl'>New</Link>
    </div>
- 
-    <div>
-      {todos.map((todo)=>{
-  <ul key={todo.id}>
-    
-    <li>
-      <input type="checkbox" name="title" id="" />
-      {title}</li>
-
-    
-  </ul>
-})}
-    </div>
+   </div>
 
 
   
